@@ -75,13 +75,21 @@ function ZoneLevelInfo_OnUpdate(self, elapsed)
 				ZoneLevelInfoFrame_Text1:SetTextColor(1, 1, 0.2);
 				ZoneLevelInfoFrame_Text2:SetTextColor(1, 1, 0.2);
 				if (zoneInfo[3] == "H") then
-					controlInfo = " ("..L["Horde"]..")";
+					controlInfo = " ("..L["HIGH"]..")";
+					ZoneLevelInfoFrame_Text1:SetTextColor(0, 1, 0);
+					ZoneLevelInfoFrame_Text3:SetTextColor(0, 1, 0);
+				elseif (zoneInfo[3] == "L") then
+					controlInfo = " ("..L["LOW"]..")";
+					ZoneLevelInfoFrame_Text1:SetTextColor(1, 0.6, 0.2);
+					ZoneLevelInfoFrame_Text3:SetTextColor(1, 0.6, 0.2);
+				elseif (zoneInfo[3] == "N") then
+					controlInfo = " ("..L["NULL"]..")";
 					ZoneLevelInfoFrame_Text1:SetTextColor(1, 0, 0);
 					ZoneLevelInfoFrame_Text3:SetTextColor(1, 0, 0);
-				elseif (zoneInfo[3] == "A") then
-					controlInfo = " ("..L["Alliance"]..")";
-					ZoneLevelInfoFrame_Text1:SetTextColor(0, 0, 1);
-					ZoneLevelInfoFrame_Text3:SetTextColor(0, 0, 1);
+				elseif (zoneInfo[3] == "S") then
+					ZoneLevelInfoFrame_Text1:SetTextColor(0, 1, 0);
+					ZoneLevelInfoFrame_Text3:SetTextColor(0, 1, 0);
+                
 				end
 					
 				ZoneLevelInfoFrame_Text1:SetText(savedZoneName..controlInfo);

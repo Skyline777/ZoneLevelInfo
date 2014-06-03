@@ -7,15 +7,9 @@
 		,["Sanctuary"]    = "Sanctuary"
 		,["Horde"]        = "Horde"
 		,["Alliance"]     = "Alliance"
-
-	}
-	,["deDE"] = {
-
-		 ["unknown zone"] = "unbekannte Zone"
-		,["Capital City"] = "Hauptstadt"
-		,["Sanctuary"]    = "Sicheres Gebiet"
-		,["Horde"]        = "Horde"
-		,["Alliance"]     = "Allianz"
+        ,["HIGH"]         = "HIGH"
+		,["LOW"]          = "LOW"
+		,["NULL"]         = "NULL"
 
 	}
 	,["esES"] = {
@@ -25,27 +19,12 @@
 		,["Sanctuary"]    = "Santuario"
 		,["Horde"]        = "Horda"
 		,["Alliance"]     = "Alianza"
+		,["HIGH"]         = "ALTA"
+		,["LOW"]          = "BAJA"
+		,["NULL"]         = "NULA"
 
 	}
-	,["frFR"] = {
-
-		 ["unknown zone"] = "zone inconnue"
-		,["Capital City"] = "Capitale"
-		,["Sanctuary"]    = "Sanctuaire"
-		,["Horde"]        = "Horde"
-		,["Alliance"]     = "Alliance"
-
-	}
-	,["ruRU"] = {
-
-		 ["unknown zone"] = "неизвестные зоны"
-		,["Capital City"] = "Столица"
-		,["Sanctuary"]    = "Святилище"
-		,["Horde"]        = "Орда"
-		,["Alliance"]     = "Альянс"
-
-	}
-
+	
 	,
 
 
