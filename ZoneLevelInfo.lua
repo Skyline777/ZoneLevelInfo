@@ -86,7 +86,7 @@ function ZoneLevelInfo_OnUpdate(self, elapsed)
 					controlInfo = " ("..L["NULL"]..")";
 					ZoneLevelInfoFrame_Text1:SetTextColor(1, 0, 0);
 					ZoneLevelInfoFrame_Text3:SetTextColor(1, 0, 0);
-				elseif (zoneInfo[3] == "S") then
+				elseif (zoneInfo[3] == "C") then
 					ZoneLevelInfoFrame_Text1:SetTextColor(0, 1, 0);
 					ZoneLevelInfoFrame_Text3:SetTextColor(0, 1, 0);
                 
@@ -94,9 +94,9 @@ function ZoneLevelInfo_OnUpdate(self, elapsed)
 					
 				ZoneLevelInfoFrame_Text1:SetText(savedZoneName..controlInfo);
 
-				if (savedMapText ~= nil and savedMapText ~= "BLAH!" and (not zones[savedMapText] or (zones[savedMapText][3]~="C" and zoneInfo[3]=="C" and savedMapText~=savedZoneName))) then
+				if (savedMapText ~= nil and savedMapText ~= "BLAH!" and (not zones[savedMapText] or (zones[savedMapText][3]~="X" and zoneInfo[3]=="X" and savedMapText~=savedZoneName))) then
 					ZoneLevelInfoFrame_Text2:SetText(savedMapText);
-				elseif (zoneInfo[3]~="C") then
+				elseif (zoneInfo[3]~="X") then
 					ZoneLevelInfoFrame_Text2:SetText(savedZoneName);
 				else
 					ZoneLevelInfoFrame_Text2:SetText("");
@@ -125,7 +125,7 @@ function ZoneLevelInfo_LevelColour(maxLevelZone, minLevelZone)
 		local playerLevel = UnitLevel("player");
 		local levelNull = maxLevelZone + 3;
 		local levelVeryHard = minLevelZone - 1;
-		if (playerLevel < 60) then
+		if (playerLevel < 40) then
 			levelVeryHard = minLevelZone - 2;
 		end
 		local levelHard = minLevelZone;
@@ -142,7 +142,7 @@ function ZoneLevelInfo_LevelColour(maxLevelZone, minLevelZone)
 			colour = {["R"]=0, ["G"]=1, ["B"]=0.2};
 		elseif ( playerLevel > levelHard and playerLevel < levelLow ) then -- yellow, the 'sweetspot'
 			colour = {["R"]=1, ["G"]=1, ["B"]=0.2};
-		elseif ( playerLevel >= levelVeryHard and playerLevel <= levelHard ) then
+		elseif ( playerLevel >= levelVeryHard and playerLevel <= levelHard ) then -- orange, litle bit dangerous
 			colour = {["R"]=1, ["G"]=0.6, ["B"]=0.2};
 		end
 

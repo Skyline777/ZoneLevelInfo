@@ -64,7 +64,7 @@ if (currentLocale == "esES" or currentLocale == "esMX") then
 			,["La Garganta de Fuego"] = {0,0,"A"}
 			,["Tierras del Interior"] = {0,0,"A"}
 			,["Las Tierras Devastadas"] = {0,0,"A"}
-			,["Azshara"] = {35,40,"N"}
+			,["Azshara"] = {30,40,"L"}
 			,["Cráter de Un'Goro"] = {0,0,"A"}
 			,["Frondavil"] = {35,40,"N"}
 			,["Las Estepas Ardientes"] = {0,0,"A"}
@@ -153,7 +153,7 @@ else
 			,["Searing Gorge"] = {0,0,"A"}
 			,["The Hinterlands"] = {0,0,"A"}
 			,["Blasted Lands"] = {0,0,"A"}
-			,["Azshara"] = {35,40,"N"}
+			,["Azshara"] = {30,40,"L"}
 			,["Felwood"] = {35,40,"N"}
 			,["Un'Goro Crater"] = {0,0,"A"}
 			,["Burning Steppes"] = {0,0,"A"}
