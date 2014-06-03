@@ -1,10 +1,8 @@
 ## Interface: 30300
-## Title: ZoneLevelInfo |r|cFF0099FF[SGC]|r
-## Title-esES: ZoneLevelInfo |r|cFF0099FF[SGC]|r
-## Title-esMX: ZoneLevelInfo |r|cFF0099FF[SGC]|r
-## Notes: Shows the level ranges of the areas on the main map, as well as their security. This modified plugin is intended for private WoW server of Steel Gamers
-## Notes-esES: Muestra los rangos de niveles de las zonas en el mapa principal, asi como su nivel de seguridad. Este plugin modificado esta pensado para el servidor privado de WoW de Steel Gamers.
-## Notes-esMX: Muestra los rangos de niveles de las zonas en el mapa principal, asi como su nivel de seguridad. Este plugin modificado esta pensado para el servidor privado de WoW de Steel Gamers.
+## Title: |r|cFF0099FF[SGC]|r ZoneLevelInfo
+## Notes: Shows the level ranges of the areas on the main map, as well as their security. This modified plugin is intended for Custom Private  server of Steel Gamers
+## Notes-esES: Muestra los rangos de niveles de las zonas en el mapa principal, asi como su nivel de seguridad. Este plugin modificado esta pensado para el servidor Custom Privado de Steel Gamers.
+## Notes-esMX: Muestra los rangos de niveles de las zonas en el mapa principal, asi como su nivel de seguridad. Este plugin modificado esta pensado para el servidor Custom Privado de Steel Gamers.
 ## SavedVariables: ZoneLevelInfoSettings
 ## Version: 1.1.1
 ## Author: DJarv
