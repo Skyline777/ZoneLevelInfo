@@ -72,23 +72,27 @@ function ZoneLevelInfo_OnUpdate(self, elapsed)
 			else
 				local zoneInfo = zones[savedZoneName];
 				local controlInfo = "";
-				ZoneLevelInfoFrame_Text1:SetTextColor(1, 1, 0.2);
+				ZoneLevelInfoFrame_Text1:SetTextColor(1, 1, 0.2); -- Yellow
 				ZoneLevelInfoFrame_Text2:SetTextColor(1, 1, 0.2);
 				if (zoneInfo[3] == "H") then
 					controlInfo = " ("..L["HIGH"]..")";
-					ZoneLevelInfoFrame_Text1:SetTextColor(0, 1, 0);
+					ZoneLevelInfoFrame_Text1:SetTextColor(0, 1, 0); -- Green
 					ZoneLevelInfoFrame_Text3:SetTextColor(0, 1, 0);
 				elseif (zoneInfo[3] == "L") then
 					controlInfo = " ("..L["LOW"]..")";
-					ZoneLevelInfoFrame_Text1:SetTextColor(1, 0.6, 0.2);
+					ZoneLevelInfoFrame_Text1:SetTextColor(1, 0.6, 0.2); -- Orange
 					ZoneLevelInfoFrame_Text3:SetTextColor(1, 0.6, 0.2);
 				elseif (zoneInfo[3] == "N") then
 					controlInfo = " ("..L["NULL"]..")";
-					ZoneLevelInfoFrame_Text1:SetTextColor(1, 0, 0);
+					ZoneLevelInfoFrame_Text1:SetTextColor(1, 0, 0); -- Red
 					ZoneLevelInfoFrame_Text3:SetTextColor(1, 0, 0);
 				elseif (zoneInfo[3] == "C") then
-					ZoneLevelInfoFrame_Text1:SetTextColor(0, 1, 0);
+					ZoneLevelInfoFrame_Text1:SetTextColor(0, 1, 0); -- Green
 					ZoneLevelInfoFrame_Text3:SetTextColor(0, 1, 0);
+                elseif (zoneInfo[3] == "A") then
+                    controlInfo = " ("..L["ClosedZone"]..")";
+					ZoneLevelInfoFrame_Text1:SetTextColor(1, 1, 1);
+					ZoneLevelInfoFrame_Text3:SetTextColor(1, 1, 1);
                 
 				end
 					

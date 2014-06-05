@@ -30,10 +30,10 @@ if (currentLocale == "esES" or currentLocale == "esMX") then
 			,["Ciudad de Shattrath"] = {0,0,"A"}
 			,["Dalaran"] = {0,0,"A"}
 			,["Bosque Canción Eterna"] = {0,0,"A"}
-			,["Bosque de Elwynn"] = {1,5,"H"}
+			,["Bosque de Elwynn"] = {1,10,"H"}
 			,["Claros de Tirisfal"] = {0,0,"A"}
 			,["Dun Morogh"] = {0,0,"A"}
-			,["Durotar"] = {1,5,"H"}
+			,["Durotar"] = {1,10,"H"}
 			,["Isla Bruma Azur"] = {0,0,"A"}
 			,["Mar de la Bruma"] = {0,0,"A"}
 			,["Mulgore"] = {5,10,"H"}
@@ -119,11 +119,11 @@ else
 			,["Shattrath City"] = {0,0,"A"}
 			,["Dalaran"] = {0,0,"A"}
 			,["Dun Morogh"] = {0,0,"A"}
-			,["Elwynn Forest"] = {1,5,"H"}
+			,["Elwynn Forest"] = {1,10,"H"}
 			,["Eversong Woods"] = {0,0,"A"}
 			,["Tirisfal Glades"] = {0,0,"A"}
 			,["Azuremyst Isle"] = {0,0,"A"}
-			,["Durotar"] = {1,5,"H"}
+			,["Durotar"] = {1,10,"H"}
 			,["Mulgore"] = {5,10,"H"}
 			,["Teldrassil"] = {5,10,"H"}
 			,["The Veiled Sea"] = {0,0,"A"}
