@@ -96,8 +96,6 @@ if (currentLocale == "esES" or currentLocale == "esMX") then
 			,["Las Cumbres Tormentosas"] = {0,0,"A"}
 	}
 
-
-
 else
 	if (currentLocale ~= 	"enUS") then
 		currentLocale = "enUS";
@@ -186,14 +184,9 @@ else
 	}
 end
 
-
-
 for ckey, continent in next, continentNumberTable do
 	zones[continent]={0,0,"C"};
 end
-
-
-
 
 -------------------------------
 -- Database validation
@@ -213,7 +206,7 @@ end
 
 if (missingZones) then
 	if (currentLocaleSupported) then
-		DEFAULT_CHAT_FRAME:AddMessage("|cFFFF6600ZoneLevelInfo ERROR - one or more missing zones. ZoneLevelInfo is out of date or has a bug. Please report on Curse with the missing zones if this is the current game release version.");
+		DEFAULT_CHAT_FRAME:AddMessage("|cFFFF6600ZoneLevelInfo ERROR - one or more missing zones. ZoneLevelInfo is out of date or has a bug. Please report on Github or in the Forums with the missing zones if this is the current game release version.");
 	else
 		DEFAULT_CHAT_FRAME:AddMessage("|cFFFF6600ZoneLevelInfo ERROR - your locale ["..GetLocale().."] is not supported. Loaded ["..currentLocale.."].");
 	end

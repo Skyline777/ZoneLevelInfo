@@ -7,10 +7,10 @@
 		,["Sanctuary"]    = "Sanctuary"
 		,["Horde"]        = "Horde"
 		,["Alliance"]     = "Alliance"
-        ,["ClosedZone"]       = "CLOSED ZONE"
-        ,["HIGH"]         = "HIGH"
-		,["LOW"]          = "LOW"
-		,["NULL"]         = "NULL"
+        ,["ClosedZone"]   = "CLOSED ZONE"
+        ,["HIGH"]         = "SAFE"
+		,["LOW"]          = "DANGEROUS"
+		,["NULL"]         = "HIGHLY DANGEROUS"
 
 	}
 	,["esES"] = {
@@ -21,14 +21,11 @@
 		,["Horde"]        = "Horda"
 		,["Alliance"]     = "Alianza"
         ,["ClosedZone"]   = "ZONA CERRADA"
-		,["HIGH"]         = "ALTA"
-		,["LOW"]          = "BAJA"
-		,["NULL"]         = "NULA"
+		,["HIGH"]         = "SEGURA"
+		,["LOW"]          = "PELIGROSA"
+		,["NULL"]         = "MUY PELIGROSA"
 
 	}
-	
-	,
-
 
 
 };
