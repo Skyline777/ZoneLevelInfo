@@ -60,7 +60,7 @@ if (currentLocale == "esES" or currentLocale == "esMX") then
 			,["Tierras Inhóspitas"] = {0,0,"A"}
 			,["Marjal Revolcafango"] = {35,45,"N"}
 			,["Feralas"] = {40,50,"N"}
-			,["Tanaris"] = {40,50,"N"}
+			,["Tanaris"] = {40,50,"L"}
 			,["La Garganta de Fuego"] = {0,0,"A"}
 			,["Tierras del Interior"] = {0,0,"A"}
 			,["Las Tierras Devastadas"] = {0,0,"A"}
@@ -147,7 +147,7 @@ else
 			,["Swamp of Sorrows"] = {0,0,"A"}
 			,["Dustwallow Marsh"] = {35,40,"N"}
 			,["Feralas"] = {40,50,"N"}
-			,["Tanaris"] = {40,50,"N"}
+			,["Tanaris"] = {40,50,"L"}
 			,["Searing Gorge"] = {0,0,"A"}
 			,["The Hinterlands"] = {0,0,"A"}
 			,["Blasted Lands"] = {0,0,"A"}
