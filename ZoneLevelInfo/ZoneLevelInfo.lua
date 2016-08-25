@@ -75,22 +75,22 @@ function ZoneLevelInfo_OnUpdate(self, elapsed)
 				ZoneLevelInfoFrame_Text1:SetTextColor(1, 1, 0.2); -- Yellow
 				ZoneLevelInfoFrame_Text2:SetTextColor(1, 1, 0.2);
 				if (zoneInfo[3] == "H") then
-					controlInfo = " ("..L["HIGH"]..")";
+					controlInfo = " ("..ZLoc["HIGH"]..")";
 					ZoneLevelInfoFrame_Text1:SetTextColor(0, 1, 0); -- Green
 					ZoneLevelInfoFrame_Text3:SetTextColor(0, 1, 0);
 				elseif (zoneInfo[3] == "L") then
-					controlInfo = " ("..L["LOW"]..")";
+					controlInfo = " ("..ZLoc["LOW"]..")";
 					ZoneLevelInfoFrame_Text1:SetTextColor(1, 0.6, 0.2); -- Orange
 					ZoneLevelInfoFrame_Text3:SetTextColor(1, 0.6, 0.2);
 				elseif (zoneInfo[3] == "N") then
-					controlInfo = " ("..L["NULL"]..")";
+					controlInfo = " ("..ZLoc["NULL"]..")";
 					ZoneLevelInfoFrame_Text1:SetTextColor(1, 0, 0); -- Red
 					ZoneLevelInfoFrame_Text3:SetTextColor(1, 0, 0);
 				elseif (zoneInfo[3] == "C") then
 					ZoneLevelInfoFrame_Text1:SetTextColor(0, 1, 0); -- Green
 					ZoneLevelInfoFrame_Text3:SetTextColor(0, 1, 0);
                 elseif (zoneInfo[3] == "A") then
-                    controlInfo = " ("..L["ClosedZone"]..")";
+                    controlInfo = " ("..ZLoc["ClosedZone"]..")";
 					ZoneLevelInfoFrame_Text1:SetTextColor(1, 1, 1);
 					ZoneLevelInfoFrame_Text3:SetTextColor(1, 1, 1);
                 
@@ -109,14 +109,14 @@ function ZoneLevelInfo_OnUpdate(self, elapsed)
 				local setColour = ZoneLevelInfo_LevelColour(zoneInfo[2], zoneInfo[1]);
 				local levelRange = "";
 				if (zoneInfo[1] == 0 and zoneInfo[2] > 0) then
-					levelRange = L["Capital City"];
+					levelRange = ZLoc["Capital City"];
 					if (zoneInfo[3] == "S") then
-						levelRange = levelRange.." - "..L["Sanctuary"];
+						levelRange = levelRange.." - "..ZLoc["Sanctuary"];
 					end
 				elseif (zoneInfo[1] > 0) then
 					levelRange = "["..zoneInfo[1].."-"..zoneInfo[2].."]";
 				elseif (zoneInfo[1] < 0) then
-					levelRange = "["..L["unknown zone"].."]";
+					levelRange = "["..ZLoc["unknown zone"].."]";
 				end
 				ZoneLevelInfoFrame_Text3:SetTextColor(setColour["R"],setColour["G"],setColour["B"]);
 				ZoneLevelInfoFrame_Text3:SetText(levelRange);

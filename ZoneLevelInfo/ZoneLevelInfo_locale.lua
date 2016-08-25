@@ -1,4 +1,4 @@
-﻿L = {
+﻿ZLoc = {
 
 	 ["enUS"] = {
 
@@ -30,4 +30,4 @@
 
 };
 
-L = L[currentLocale];
+ZLoc = ZLoc[currentLocale];
