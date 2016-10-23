@@ -4,7 +4,7 @@
 ## Notes-esES: Muestra los rangos de niveles de las zonas en el mapa principal, asi como su nivel de seguridad. Este plugin modificado esta pensado para el servidor Custom Privado de Warlords of Xoroth.
 ## Notes-esMX: Muestra los rangos de niveles de las zonas en el mapa principal, asi como su nivel de seguridad. Este plugin modificado esta pensado para el servidor Custom Privado de Warlords of Xoroth.
 ## SavedVariables: ZoneLevelInfoSettings
-## Version: 1.4
+## Version: 1.5.0
 ## Author: DJarv
 ## Modified by: Skyline777HD
 

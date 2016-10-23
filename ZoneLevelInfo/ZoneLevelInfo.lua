@@ -240,7 +240,7 @@ local function ZoneLevelInfo_OnEvent(self, event, arg1, ...)
 		if (missingZones) then
 			okMessage = "with errors, see above..";
 		end
-		DEFAULT_CHAT_FRAME:AddMessage("|cFFFFCC00ZoneLevelInfo 1.1 |cFF00CCFF[WoX Version] |cFFFFCC00loaded for ["..currentLocale.."] "..okMessage.."."); -- |cFFFFCC00 Yellow -- |cFF00CCFF Ligh Blue
+		DEFAULT_CHAT_FRAME:AddMessage("|cFFFFCC00ZoneLevelInfo 1.1 |cFF00CCFF[WoX Version 1.5.0] |cFFFFCC00loaded for ["..currentLocale.."] "..okMessage.."."); -- |cFFFFCC00 Yellow -- |cFF00CCFF Ligh Blue
 	end
 end
 ZoneLevelInfo_Frame:SetScript("OnEvent", ZoneLevelInfo_OnEvent);
